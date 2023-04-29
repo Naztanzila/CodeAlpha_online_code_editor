@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Live Code Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"
+    crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+        <div class="left">
+            <label><i class="fa-brands fa-html5"></i>HTML</label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-square-js"></i>JAVASCRIPT</label>
+            <textarea id="js-code" onkeyup="run()"></textarea>
+             
+        </div>
+        <div class="right">
+            <label><i class="fa-solid fa-play"></i>Output</label>
+            <iframe id="out"></iframe>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="app.js">
+    </script>
+   </body>
+</html>   
